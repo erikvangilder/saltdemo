@@ -1,0 +1,3 @@
+lshw:
+  pkg.installed
+

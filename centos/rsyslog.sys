@@ -1,0 +1,10 @@
+rsyslog:
+  pkg.installed:
+    - name: rsyslog
+
+rsyslog_running:
+  service.running:
+    - name: rsyslog
+    - enable: True
+    - require:
+      - pkg: rsyslog
